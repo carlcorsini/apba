@@ -1,6 +1,7 @@
 let batting = [
   {
     id: 18,
+    img: "https://vintagecardprices.com/pics/400/21/66388.jpg",
     team_id: "bosa",
     first_name: "Franklin",
     middle_name: "Leal",
@@ -74,6 +75,7 @@ let result = roll(6).toString() + roll(6).toString()
 
 let outcome = batting[0].table[0][result]
 
-console.log(outcome)
+
+
 
 module.exports = outcome
