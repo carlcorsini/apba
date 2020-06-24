@@ -1,18 +1,18 @@
 let batting = [
   {
     id: 18,
-    img: "https://vintagecardprices.com/pics/400/21/66388.jpg",
-    team_id: "bosa",
-    first_name: "Franklin",
-    middle_name: "Leal",
-    nick_name: "Sully",
-    last_name: "Sullivan",
-    height: "6-6",
+    img: 'https://vintagecardprices.com/pics/400/21/66388.jpg',
+    team_id: 'bosa',
+    first_name: 'Franklin',
+    middle_name: 'Leal',
+    nick_name: 'Sully',
+    last_name: 'Sullivan',
+    height: '6-6',
     weight: 215,
-    born: "01/23/30",
-    born_in: "Hollywood, CA",
-    bats: "r",
-    throws: "r",
+    born: '01/23/30',
+    born_in: 'Hollywood, CA',
+    bats: 'r',
+    throws: 'r',
     stats: {
       yr: 1957,
       g: 31,
@@ -24,7 +24,7 @@ let batting = [
       era: 2.73,
       bb: 48,
       so: 127,
-      hr: 16
+      hr: 16,
     },
     table: [
       {
@@ -63,19 +63,18 @@ let batting = [
         63: 32,
         64: 13,
         65: 35,
-        66: 6
-      }
-    ]
-  }
+        66: 6,
+      },
+    ],
+  },
 ];
 
-let roll = sides => Math.ceil(Math.random() * sides)
+let roll = (sides) => Math.ceil(Math.random() * sides);
 
-let result = roll(6).toString() + roll(6).toString()
+let result = roll(6).toString() + roll(6).toString();
 
-let outcome = batting[0].table[0][result]
+let bip = batting[0].table[0][result];
 
+let player = batting[0];
 
-
-
-module.exports = outcome
+module.exports = { bip, player };
